@@ -30,7 +30,13 @@ export default class EventBasicAdapter extends Device {
           reg: "(?<=password:)( *|\\n*)( *|\\n*)'(.*?)'",
           flags: 'gm',
           replace: "''"
-        }])
+        }]).content(
+          Rule.object().fields({
+            reg: Rule.string().description("Регулярное выражение в виде строки"),
+            flags: Rule.string().description("Флаги регулярного выражения типа gm"),
+            replace: Rule.string().description("Строка для замены, может использовать перемнные регулярных выражений")
+          })
+        )
         .description('Список regexp выражений для замены')
     };
   }

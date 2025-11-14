@@ -28,7 +28,11 @@ class EventBasicAdapter extends vrack2_core_1.Device {
                     reg: "(?<=password:)( *|\\n*)( *|\\n*)'(.*?)'",
                     flags: 'gm',
                     replace: "''"
-                }])
+                }]).content(vrack2_core_1.Rule.object().fields({
+                reg: vrack2_core_1.Rule.string().description("Регулярное выражение в виде строки"),
+                flags: vrack2_core_1.Rule.string().description("Флаги регулярного выражения типа gm"),
+                replace: vrack2_core_1.Rule.string().description("Строка для замены, может использовать перемнные регулярных выражений")
+            }))
                 .description('Список regexp выражений для замены')
         };
     }
