@@ -1,0 +1,6 @@
+{
+    "EventConsoleAdapter": "devices/EventConsoleAdapter",
+    "EventFileAdapter": "devices/EventFileAdapter",
+    "EventTracker": "devices/EventTracker",
+    "Informer": "devices/Informer"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "vrack2-system",
+  "version": "0.0.1",
+  "description": "Набор устройств для взаимодействия с системными функциями VRack2",
+  "main": "index.js",
+  "author": "Boris Bobylev",
+  "devDependencies": {
+    "@types/node": "^24.9.1"
+  }
+}
