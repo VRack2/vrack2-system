@@ -9,7 +9,7 @@ import EventBasicAdapter from './extends/EventBasicAdapter'
 class EventTextAdapter extends EventBasicAdapter {
 
   description(): string {
-    return fs.readFileSync(path.join(path.dirname(__dirname), 'docs', 'EventFileAdapter.md')).toString('utf-8')
+    return fs.readFileSync(path.join(path.dirname(__dirname), 'docs', 'EventTextAdapter.md')).toString('utf-8')
   }
 
   outputs() {

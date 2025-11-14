@@ -9,7 +9,7 @@ const path_1 = __importDefault(require("path"));
 const EventBasicAdapter_1 = __importDefault(require("./extends/EventBasicAdapter"));
 class EventTextAdapter extends EventBasicAdapter_1.default {
     description() {
-        return fs_1.default.readFileSync(path_1.default.join(path_1.default.dirname(__dirname), 'docs', 'EventFileAdapter.md')).toString('utf-8');
+        return fs_1.default.readFileSync(path_1.default.join(path_1.default.dirname(__dirname), 'docs', 'EventTextAdapter.md')).toString('utf-8');
     }
     outputs() {
         return {
