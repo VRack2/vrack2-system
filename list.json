@@ -3,5 +3,6 @@
     "EventFileAdapter": "devices/EventFileAdapter",
     "EventTextAdapter": "devices/EventTextAdapter",
     "EventTracker": "devices/EventTracker",
-    "Informer": "devices/Informer"
+    "Informer": "devices/Informer",
+    "Telegram": "devices/Telegram"
 }
